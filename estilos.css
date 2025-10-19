@@ -103,3 +103,21 @@ body {
     /* Ejercicio 8: El overflow hidden */
     overflow: hidden;
 }
+
+/* Ejercicio 11: Primera letra con estilo diferente */
+label::first-letter,
+div::first-letter {
+    font-size: 24px;
+    color: #7423d6; /* ejemplo de color distinto */
+    font-weight: bold;
+}
+
+/* Ejercicio 12: Camas pares dentro del grupo 1 seran de este color  */
+#grupo1 label:nth-child(even) {
+    background-color: #F1FEE3;
+}
+
+/* Ejercicio 13: La cama de gruñon siempre será de este color */
+#gruñon {
+    background-color: #D6234A !important;
+}
