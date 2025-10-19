@@ -1,0 +1,105 @@
+/* Propiedades del Body */
+body {
+    width: 1280px;
+    border: 10px solid black;
+    margin: 0px;
+    height: 800px;
+}
+/* El espacio útil del body es 1280px x 800px ya que el tamaño total del body seria 1290px (width + border)*/
+
+/* CAMAS DE LOS ENANITOS */
+/* Grupo 1: Elementos en linea*/
+#sabio {
+    width: 100px;
+    height: 300px;
+    padding: 2px 10px 0px 10px;
+    margin: 20px 40px;
+    background-color: #F8C8DC;
+    /* Ejercicio 8: Al flotar los elementos en linea si quito el float del primer elemento, este se pondrá
+    en última posición */
+    float: left;
+}
+
+#gruñon {
+    width: 100px;
+    height: 300px;
+    padding: 2px 10px 0px 10px;
+    margin: 20px 40px;
+    background-color: #FFF4B2;
+
+    /* Ejercicio 6: a pesar de mover la cama de Gruñon, esta mantiene su espacio anterior */
+    /* position: relative;
+    top: 250px;
+    left: 800px; */
+
+    /* Ejercicio 7: colocamos la cama de Gruñon respecto a su contenedor, ya no se mantiene
+    la posicion original de su cama */
+    /* position: absolute;
+    top: 250px;
+    right: 20px; */
+
+    float: left;
+}
+
+#feliz {
+    width: 100px;
+    height: 300px;
+    padding: 2px 10px 0px 10px;
+    margin: 20px 40px;
+    background-color: #C8F4C0;
+    float: left;
+}
+
+#dormilon {
+    width: 100px;
+    height: 300px;
+    padding: 2px 10px 0px 10px;
+    margin: 20px 40px;
+    background-color: #BEE3F8;
+    float: left;
+}
+
+/* Grupo 2: Elementos en bloque*/
+#timido {
+    width: 100px;
+    height: 300px;
+    padding: 2px 10px 0px 10px;
+    margin: 20px 40px;
+    background-color: #FFD9B3;
+    /* Ejercicio 8: Al NO flotar los elementos en bloque si quito el float del primer elemento, este se pondrá
+    superpuesto al div de los elementos en linea */
+    float: left;
+}
+
+#mocoso {
+    width: 100px;
+    height: 300px;
+    padding: 2px 10px 0px 10px;
+    margin: 20px 40px;
+    background-color: #E3D1FF;
+    float: left;
+}
+
+#mudito {
+    width: 100px;
+    height: 300px;
+    padding: 2px 10px 0px 10px;
+    margin: 20px 40px;
+    background-color: #FFBFBF;
+    float: left;
+}
+
+/* Ejercicio 7 */
+#grupo1 {
+    position: relative;
+    /* Cambiamos el ancho del div donde se encuentra Gruñon, este se mantiene siempre cerca del borde del div
+    en la posición absoluta ya que este div tiene una posicion relativa */
+    /* width: 1000px; */
+}
+
+#grupo2{
+    position: static;
+    /* height: 800; */
+    /* Ejercicio 8: El overflow hidden */
+    overflow: hidden;
+}
