@@ -2,9 +2,10 @@
 body {
     width: 1280px;
     border: 10px solid black;
-    margin: 0px;
+    margin: 0px auto;
     height: 800px;
 }
+
 /* El espacio útil del body es 1280px ya que el tamaño total del body seria 1300px (width + border)*/
 
 /* CAMAS DE LOS ENANITOS */
@@ -95,12 +96,13 @@ body {
     /* Cambiamos el ancho del div donde se encuentra Gruñon, este se mantiene siempre cerca del borde del div
     en la posición absoluta ya que este div tiene una posicion relativa */
     /* width: 1000px; */
+    overflow: hidden;
 }
 
-#grupo2{
+#grupo2 {
     position: static;
     /* height: 800; */
-    /* Ejercicio 8: El overflow hidden */
+    /* Ejercicio 8: El overflow hidden para el tamaño del contenerdor se adapte a su contenido */
     overflow: hidden;
 }
 
@@ -108,7 +110,7 @@ body {
 label::first-letter,
 div::first-letter {
     font-size: 24px;
-    color: #7423d6; /* ejemplo de color distinto */
+    color: #7423d6;
     font-weight: bold;
 }
 
@@ -120,4 +122,24 @@ div::first-letter {
 /* Ejercicio 13: La cama de gruñon siempre será de este color */
 #gruñon {
     background-color: #D6234A !important;
+}
+
+/* EXTRA: Puerta y ventana, uso la position relative porque la abosule no se mantendría en el luegar que quiero
+ya que los margenes cambian segun el tamaño del monitor */
+#puerta {
+    background-color: burlywood;
+    width: 10px;
+    height: 100px;
+    position: relative;
+    bottom: 350px;
+    right: -1280px;
+}
+
+#ventana {
+    background-color: lightblue;
+    width: 10px;
+    height: 100px;
+    position: relative;
+    bottom: 450px;
+    right: 10px;
 }
