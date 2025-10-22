@@ -4,6 +4,7 @@ body {
     border: 10px solid black;
     margin: 0px auto;
     height: 800px;
+    position: relative;
 }
 
 /* El espacio útil del body es 1280px ya que el tamaño total del body seria 1300px (width + border)*/
@@ -97,6 +98,7 @@ body {
     en la posición absoluta ya que este div tiene una posicion relativa */
     /* width: 1000px; */
     overflow: hidden;
+    background-color: #ffddbe;
 }
 
 #grupo2 {
@@ -104,6 +106,7 @@ body {
     /* height: 800; */
     /* Ejercicio 8: El overflow hidden para el tamaño del contenerdor se adapte a su contenido */
     overflow: hidden;
+    background-color: #befff4;
 }
 
 /* Ejercicio 11: Primera letra con estilo diferente */
@@ -130,16 +133,16 @@ ya que los margenes cambian segun el tamaño del monitor */
     background-color: burlywood;
     width: 10px;
     height: 100px;
-    position: relative;
-    bottom: 350px;
-    right: -1280px;
+    position: absolute;
+    top: 350px;
+    right: -10px;
 }
 
 #ventana {
     background-color: lightblue;
     width: 10px;
     height: 100px;
-    position: relative;
-    bottom: 450px;
-    right: 10px;
+    position: absolute;
+    top: 350px;
+    left: -10px;
 }
