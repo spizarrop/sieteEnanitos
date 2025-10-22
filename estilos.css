@@ -5,7 +5,7 @@ body {
     margin: 0px;
     height: 800px;
 }
-/* El espacio útil del body es 1280px x 800px ya que el tamaño total del body seria 1290px (width + border)*/
+/* El espacio útil del body es 1280px ya que el tamaño total del body seria 1300px (width + border)*/
 
 /* CAMAS DE LOS ENANITOS */
 /* Grupo 1: Elementos en linea*/
